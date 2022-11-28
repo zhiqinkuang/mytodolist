@@ -1,17 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="page-header">
+  <h1>MyTodoList</h1>
+ </div>
+  <div class="container">
+
+  <div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading">盛年不再来，一日难再晨</div>
+  <UserHeader></UserHeader>
+   <UserList></UserList>
+   <UserFooter></UserFooter>
   </div>
+  </div>
+    
+   
+  </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserList from './components/UserList.vue'
+import UserHeader from './components/UserHeader.vue'
+import UserFooter from './components/UserFooter.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UserHeader,UserList,UserFooter
   }
 }
 </script>
@@ -25,4 +42,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
+
+
+
 </style>
